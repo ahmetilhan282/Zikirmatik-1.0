@@ -1,0 +1,17 @@
+<resources>
+    <string name="appName">Zikirmatik</string>
+
+    <string name="lblZikir">Zikir Sayısı:</string>
+    <string name="btnZikret">Zikret</string>
+    <string name="btnSifirla">Sıfırla</string>
+    <string name="btnGecmis">Geçmiş</string>
+    <string name="btnSorgula">Sorgula</string>
+    <string name="btnGeri">Geri</string>
+    <string name="lblAdi">Zikir Adı:</string>
+    <string name="btnSil">Sil</string>
+    <string name="msjSifirla">Sayaç Sıfırlandı</string>
+    <string name="msjSil">Sayaç Silindi</string>
+
+
+
+</resources>
