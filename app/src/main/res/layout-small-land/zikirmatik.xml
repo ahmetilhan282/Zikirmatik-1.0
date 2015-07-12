@@ -89,21 +89,20 @@
 
         <LinearLayout
             android:orientation="vertical"
-            android:layout_width="209dp"
-            android:layout_height="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:id="@+id/layButtonAlt"
-            android:weightSum="1"
-            android:layout_weight="1.01">
+            android:weightSum="1">
 
             <ListView
                 android:layout_width="match_parent"
-                android:layout_height="139dp"
+                android:layout_height="138dp"
                 android:id="@+id/lstZikir"
                 android:choiceMode="singleChoice"
                 tools:listitem="@android:layout/simple_list_item_2" />
 
             <Button
-                android:layout_width="match_parent"
+                android:layout_width="217dp"
                 android:layout_height="wrap_content"
                 android:text="@string/btnGecmis"
                 android:id="@+id/btnGecmis" />
@@ -112,7 +111,7 @@
 
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:weightSum="1"
             android:id="@+id/layButtonUst">
@@ -130,21 +129,22 @@
                     android:text="@string/btnSifirla"
                     android:id="@+id/btnSifirla"
                     android:layout_gravity="top"
-                    android:layout_weight="1" />
+                    android:layout_weight="1.01" />
 
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="75dp"
+                    android:layout_height="84dp"
                     android:text="@string/btnSil"
                     android:id="@+id/btnSil"
                     android:layout_gravity="bottom" />
             </LinearLayout>
 
             <Button
-                android:layout_width="170dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/btnZikret"
-                android:id="@+id/btnZikret" />
+                android:id="@+id/btnZikret"
+                android:layout_gravity="right" />
 
         </LinearLayout>
 

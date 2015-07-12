@@ -9,11 +9,11 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="270dp"
-        android:layout_height="309dp"
+        android:layout_height="match_parent"
         android:layout_gravity="center_horizontal"
         android:id="@+id/layGecmisListe"
         android:weightSum="1"
-        android:layout_weight="0.90">
+        android:layout_weight="0.88">
 
         <ListView
             android:layout_width="match_parent"

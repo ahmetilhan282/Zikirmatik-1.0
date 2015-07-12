@@ -25,6 +25,16 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+
     </application>
+    <supports-screens
+        android:resizeable = "false"
+        android:smallScreens ="true"
+        android:normalScreens ="true"
+        android:largeScreens ="true"
+        android:xlargeScreens ="true"
+        android:anyDensity ="true"
+        />
 
 </manifest>

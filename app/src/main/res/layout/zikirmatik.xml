@@ -90,8 +90,7 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="1.66"
+            android:layout_height="259dp"
             android:id="@+id/layButtonAlt"
             android:weightSum="1">
 
@@ -100,7 +99,8 @@
                 android:layout_height="128dp"
                 android:id="@+id/lstZikir"
                 android:choiceMode="singleChoice"
-                tools:listitem="@android:layout/simple_list_item_2" />
+                tools:listitem="@android:layout/simple_list_item_2"
+                android:layout_weight="1.04" />
 
             <Button
                 android:layout_width="match_parent"
@@ -130,14 +130,15 @@
                     android:text="@string/btnSifirla"
                     android:id="@+id/btnSifirla"
                     android:layout_gravity="top"
-                    android:layout_weight="1" />
+                    android:layout_weight="0.61" />
 
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="75dp"
+                    android:layout_height="wrap_content"
                     android:text="@string/btnSil"
                     android:id="@+id/btnSil"
-                    android:layout_gravity="bottom" />
+                    android:layout_gravity="bottom"
+                    android:layout_weight="0.70" />
             </LinearLayout>
 
             <Button

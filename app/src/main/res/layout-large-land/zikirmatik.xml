@@ -82,25 +82,26 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:weightSum="1"
-        android:orientation="horizontal"
-        android:id="@+id/layButton">
+        android:orientation="vertical"
+        android:id="@+id/layButton"
+        android:layout_weight="0.93">
 
         <LinearLayout
             android:orientation="vertical"
-            android:layout_width="209dp"
-            android:layout_height="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:id="@+id/layButtonAlt"
-            android:weightSum="1"
-            android:layout_weight="1.01">
+            android:weightSum="1">
 
             <ListView
                 android:layout_width="match_parent"
-                android:layout_height="139dp"
+                android:layout_height="128dp"
                 android:id="@+id/lstZikir"
                 android:choiceMode="singleChoice"
-                tools:listitem="@android:layout/simple_list_item_2" />
+                tools:listitem="@android:layout/simple_list_item_2"
+                android:layout_weight="1.03" />
 
             <Button
                 android:layout_width="match_parent"
@@ -110,43 +111,45 @@
 
         </LinearLayout>
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:id="@+id/layButtonUst"
+        android:layout_weight="0.12">
+
         <LinearLayout
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:weightSum="1"
-            android:id="@+id/layButtonUst">
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:id="@+id/laySilSifirla"
-                android:weightSum="1">
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/btnSifirla"
-                    android:id="@+id/btnSifirla"
-                    android:layout_gravity="top"
-                    android:layout_weight="1" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="75dp"
-                    android:text="@string/btnSil"
-                    android:id="@+id/btnSil"
-                    android:layout_gravity="bottom" />
-            </LinearLayout>
+            android:id="@+id/laySilSifirla"
+            android:weightSum="1">
 
             <Button
-                android:layout_width="170dp"
-                android:layout_height="match_parent"
-                android:text="@string/btnZikret"
-                android:id="@+id/btnZikret" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnSifirla"
+                android:id="@+id/btnSifirla"
+                android:layout_gravity="top"
+                android:layout_weight="0.70" />
 
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="69dp"
+                android:text="@string/btnSil"
+                android:id="@+id/btnSil"
+                android:layout_gravity="bottom" />
         </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/btnZikret"
+            android:id="@+id/btnZikret"
+            android:layout_gravity="right" />
 
     </LinearLayout>
 

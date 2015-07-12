@@ -13,7 +13,7 @@
         android:layout_gravity="center_horizontal"
         android:id="@+id/layGecmisListe"
         android:weightSum="1"
-        android:layout_weight="0.90">
+        android:layout_weight="0.86">
 
         <ListView
             android:layout_width="match_parent"
