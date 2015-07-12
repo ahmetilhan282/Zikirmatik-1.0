@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layGecmis"
+    android:background="#ff13d2ff"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="270dp"
+        android:layout_height="309dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/layGecmisListe"
+        android:weightSum="1">
+
+        <ListView
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/lstGecmis" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/layButon"
+        android:layout_weight="0.10">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnSorgula"
+            android:id="@+id/btnSorgula" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnGeri"
+            android:id="@+id/btnGeri" />
+    </LinearLayout>
+
+</LinearLayout>
