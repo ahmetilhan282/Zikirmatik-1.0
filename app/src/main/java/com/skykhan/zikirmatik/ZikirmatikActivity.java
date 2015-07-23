@@ -74,6 +74,7 @@ public class ZikirmatikActivity extends Activity {
             }
         });
 
+
         Button btnSil = (Button) findViewById(R.id.btnSil);
         btnSil.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,8 +93,12 @@ public class ZikirmatikActivity extends Activity {
         Button btnGecmis = (Button) findViewById(R.id.btnGecmis);
         btnGecmis.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            /*public void onClick(View v) {
                 Intent gecmisAc = new Intent(ZikirmatikActivity.this, ZikirGecmisi.class);
+                startActivity(gecmisAc);
+            }*/
+            public void onClick(View v) {
+                Intent gecmisAc = new Intent(ZikirmatikActivity.this, ZikirListesi.class);
                 startActivity(gecmisAc);
             }
         });

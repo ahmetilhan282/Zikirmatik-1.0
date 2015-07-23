@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="60dp"
+    android:layout_marginLeft="5dp"
+    android:drawableRight="@drawable/durum"
+    android:gravity="center_vertical"
+    android:text="@string/listeBasligi"
+    android:textColor="#FFFFFF"
+    android:padding="10dp"
+    android:textSelectHandleLeft="@string/listeBasligi"
+    android:textSize="14sp"
+    android:textStyle="bold">
+
+</CheckedTextView>

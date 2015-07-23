@@ -5,11 +5,11 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/tesbih72"
-        android:label="@string/appName"
+        android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
             android:name= ".ZikirmatikActivity"
-            android:label="@string/appName" >
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,14 +18,23 @@
         </activity>
         <activity
             android:name= ".ZikirGecmisi"
-            android:label="@string/appName" >
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.ZIKIRGECMISI" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:name="com.skykhan.zikirmatik.ZikirListesi"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.ZIKIRLISTESI" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
     </application>
     <supports-screens

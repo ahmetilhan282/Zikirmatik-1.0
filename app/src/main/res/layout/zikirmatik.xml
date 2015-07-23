@@ -2,12 +2,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".ZikirmatikActivity"
+    tools:context=".ZikirmatikActivity"
     android:id="@+id/zikirmatik"
-    android:background="#ffff8533"
+    android:background="@drawable/back1"
     android:weightSum="1"
     android:orientation="vertical">
 
@@ -17,136 +14,110 @@
         android:layout_height="wrap_content"
         android:id="@+id/laySayac">
 
-        <LinearLayout
-            android:orientation="horizontal"
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="top"
-            android:id="@+id/laySayacIc">
+            android:id="@+id/txtZikirAdi"
+            android:editable="true"
+            android:enabled="true" />
 
-            <TextView
-                android:text="@string/lblZikir"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="6dp"
-                android:textColor="#ff00ff55"
-                android:elegantTextHeight="true"
-                android:height="@android:dimen/app_icon_size"
-                android:textSize="@dimen/abc_dialog_padding_material"
-                android:id="@+id/lblZikir" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="6dp"
-                android:textColor="#ff00cdff"
-                android:elegantTextHeight="true"
-                android:height="@android:dimen/app_icon_size"
-                android:textSize="@dimen/abc_dialog_padding_material"
-                android:id="@+id/txtZikir"
-                android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/lblZikir" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="44dp"
-            android:layout_gravity="bottom"
-            android:id="@+id/layAd"
-            android:weightSum="1">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="@string/lblAdi"
-                android:id="@+id/lblZikirAdi"
-                android:textSize="@dimen/abc_dialog_padding_material"
-                android:padding="6dp"
-                android:textColor="#ff00ff55"
-                android:elegantTextHeight="true"
-                android:height="@android:dimen/app_icon_size"/>
-
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/txtZikirAdi"
-                android:layout_weight="1"
-                android:editable="true"
-                android:enabled="true" />
-
-        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:textColor="#ff00cdff"
+            android:elegantTextHeight="true"
+            android:height="@android:dimen/app_icon_size"
+            android:textSize="@dimen/abc_dialog_padding_material"
+            android:id="@+id/txtZikir"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/lblZikir" />
 
     </LinearLayout>
 
     <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="right"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:weightSum="1"
         android:orientation="vertical"
-        android:id="@+id/layButton">
+        android:id="@+id/layButton"
+        android:showDividers="middle"
+        android:measureWithLargestChild="false">
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="259dp"
+            android:layout_height="wrap_content"
             android:id="@+id/layButtonAlt"
-            android:weightSum="1">
+            android:weightSum="1"
+            android:layout_gravity="top">
 
             <ListView
                 android:layout_width="match_parent"
-                android:layout_height="128dp"
+                android:layout_height="352dp"
                 android:id="@+id/lstZikir"
                 android:choiceMode="singleChoice"
                 tools:listitem="@android:layout/simple_list_item_2"
-                android:layout_weight="1.04" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/btnGecmis"
-                android:id="@+id/btnGecmis" />
+                android:layout_gravity="center_horizontal" />
 
         </LinearLayout>
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:weightSum="1"
-            android:id="@+id/layButtonUst">
+            android:id="@+id/layButtonUst"
+            android:layout_gravity="center_horizontal|bottom"
+            android:showDividers="middle">
 
             <LinearLayout
-                android:orientation="vertical"
+                android:orientation="horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:id="@+id/laySilSifirla"
-                android:weightSum="1">
+                android:weightSum="1"
+                android:layout_gravity="left">
 
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/btnSifirla"
+                    android:layout_height="fill_parent"
+                    android:padding="@dimen/button_padding"
                     android:id="@+id/btnSifirla"
-                    android:layout_gravity="top"
-                    android:layout_weight="0.61" />
+                    android:background="@drawable/refresh"
+                    android:layout_gravity="left" />
 
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/btnSil"
+                    android:layout_height="fill_parent"
+                    android:padding="@dimen/button_padding"
                     android:id="@+id/btnSil"
-                    android:layout_gravity="bottom"
-                    android:layout_weight="0.70" />
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/delete"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/forward"
+                    android:id="@+id/btnGecmis"
+                    android:padding="@dimen/button_padding"
+                    android:layout_gravity="right" />
+
             </LinearLayout>
 
             <Button
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:text="@string/btnZikret"
+                android:layout_height="fill_parent"
+                android:padding="@dimen/button_padding"
                 android:id="@+id/btnZikret"
-                android:layout_gravity="right" />
+                android:layout_gravity="right"
+                android:background="@drawable/add"/>
 
         </LinearLayout>
 
